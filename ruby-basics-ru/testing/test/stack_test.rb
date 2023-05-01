@@ -8,7 +8,7 @@ class StackTest < Minitest::Test
   def setup
     @stack = Stack.new
   end
-  
+
   def test_push!
     @stack.push! 'ruby'
     assert { @stack.size == 1 }
@@ -16,13 +16,13 @@ class StackTest < Minitest::Test
 
   def test_pop!
     @stack.pop!
-    assert { @stack.size == 0 }
+    assert { @stack.size.empty? }
   end
 
   def test_clear!
     @stack.push! 'ruby'
     @stack.clear!
-    assert { @stack.size == 0 }
+    assert { @stack.size.empty? }
   end
 
   def test_empty?
