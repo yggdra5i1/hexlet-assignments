@@ -16,13 +16,13 @@ class StackTest < Minitest::Test
 
   def test_pop!
     @stack.pop!
-    assert { @stack.size.empty? }
+    assert { @stack.empty? }
   end
 
   def test_clear!
     @stack.push! 'ruby'
     @stack.clear!
-    assert { @stack.size.empty? }
+    assert { @stack.empty? }
   end
 
   def test_empty?
