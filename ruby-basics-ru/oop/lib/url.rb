@@ -2,7 +2,6 @@
 
 require 'forwardable'
 require 'uri'
-require 'debug'
 
 # BEGIN
 class Url
